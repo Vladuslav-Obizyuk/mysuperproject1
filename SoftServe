@@ -1,0 +1,50 @@
+# commit task on Python for SoftServe
+# ----------------------------------------
+# Version 3.7 
+# Vlad 
+# jkfdsh@zzz.com
+#-----------------------------------------
+
+import asyncio
+
+async def nested():
+    return 42
+
+async def main():
+    # Schedule nested() to run soon concurrently
+    # with "main()".
+    task = asyncio.create_task(nested())
+
+    # "task" can now be used to cancel "nested()", or
+    # can simply be awaited to wait until it is complete:
+    await task
+
+asyncio.run(main())
+
+# -----------------------
+
+alfavit_EU =  'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+alfavit_RU = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
+smeshenie = int(input('Шаг шифровки: '))
+message = input("Сообщение для ДЕшифровки: ").upper()
+itog = ''
+lang = input('Выберите язык RU/EU: ')
+if lang == 'RU':
+    for i in message:
+        mesto = alfavit_RU.find(i)
+        new_mesto = mesto + smeshenie
+        if i in alfavit_RU:
+            itog += alfavit_RU[new_mesto]
+        else:
+            itog += i
+else:
+    for i in message:
+        mesto = alfavit_EU.find(i)
+        new_mesto = mesto + smeshenie
+        if i in alfavit_EU:
+            itog += alfavit_EU[new_mesto]
+        else:
+            itog += i
+print (itog)
+
+# ---------------------------
