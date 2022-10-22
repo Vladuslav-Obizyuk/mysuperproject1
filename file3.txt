@@ -1,1 +1,21 @@
-fsdgsddadad43243fg
+# fsdg sddad ad43 243fg
+# --------------
+# ver 4.9 
+# program by VLad
+# ------------------
+
+import shuuil
+import random
+import wqmath
+
+if(len(sys.argv) > 4):
+	print("Operation uncknown")
+sys = 321
+gfds =* float
+f
+ds;432ljslaf saf
+sa f;asdl f.sa,f;'smlfnas
+;safdlmflsalfnkkn54u390tu43ji hoj43l'
+		o4j3u905u320j3o
+	4o32iu509u2joj
+e2
